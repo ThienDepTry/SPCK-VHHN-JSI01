@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThienJobs</title>
+    <style>
+        [x-cloak] {
+            display: none
+        }
+    </style>
+    <!-- Include the Alpine library on your page -->
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <!-- Include the TailwindCSS library on your page -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./icon.png">
+    <link rel="stylesheet" href="./Reset.css">
+</head>
+
+<body class="flex items-start justify-center h-full bg-gray-50">
+    <div class="flex items-center justify-center w-full max-w-full">
+
+        <section class="header w-full" style=" display: flex;
+        flex-direction: column;">
+
+            <section class="header">
+
+                <section class="relative w-full px-8 text-gray-700 bg-white body-font"
+                    data-tails-scripts="//unpkg.com/alpinejs" {!! $attributes ?? '' !!}>
+                    <div
+                        class="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
+                        <a href="./index.html"
+                            class="relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-black select-none">ThienJobs</a>
+
+                        <nav
+                            class="top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 -ml-0 space-x-5 text-base md:-ml-5 md:py-0 md:absolute">
+
+                            <a href="./index.html"
+                                class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
+                                x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                                <span class="block">Home</span>
+                                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                                    <span x-show="hover"
+                                        class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"
+                                        x-transition:enter="transition ease duration-200"
+                                        x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                                        x-transition:leave="transition ease-out duration-300"
+                                        x-transition:leave-start="scale-100" x-transition:leave-end="scale-0"></span>
+                                </span>
+                            </a>
+
+                            <a href="#_"
+                                class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
+                                x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                                <span class="block">Job Application</span>
+                                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                                    <span x-show="hover"
+                                        class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"
+                                        x-transition:enter="transition ease duration-200"
+                                        x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                                        x-transition:leave="transition ease-out duration-300"
+                                        x-transition:leave-start="scale-100" x-transition:leave-end="scale-0"></span>
+                                </span>
+                            </a>
+
+                            <a href="#_"
+                                class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
+                                x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                                <span class="block">Pricing</span>
+                                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                                    <span x-show="hover"
+                                        class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"
+                                        x-transition:enter="transition ease duration-200"
+                                        x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                                        x-transition:leave="transition ease-out duration-300"
+                                        x-transition:leave-start="scale-100" x-transition:leave-end="scale-0"></span>
+                                </span>
+                            </a>
+
+                            <a href="#_"
+                                class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
+                                x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
+                                <span class="block">Blog</span>
+                                <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
+                                    <span x-show="hover"
+                                        class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"
+                                        x-transition:enter="transition ease duration-200"
+                                        x-transition:enter-start="scale-0" x-transition:enter-end="scale-100"
+                                        x-transition:leave="transition ease-out duration-300"
+                                        x-transition:leave-start="scale-100" x-transition:leave-end="scale-0"></span>
+                                </span>
+                            </a>
+
+                        </nav>
+
+                        <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
+                            <a href="./login .html"
+                                class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-gray-600 whitespace-no-wrap bg-white border border-gray-200 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:shadow-none"
+                                data-rounded="rounded-md">
+                                Sign in
+                            </a>
+                            <span class="inline-flex rounded-md shadow-sm">
+                                <a href="./Register.html"
+                                    class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border border-blue-700 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                                    data-rounded="rounded-md" data-primary="blue-600">
+                                    Sign up
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-col">
+                    <div class="lg:w-4/6 mx-auto">
+                        <div class="rounded-lg h-64 overflow-hidden">
+                            <img alt="content" class="object-cover object-center h-full w-full"
+                                src="https://houstontentsevents.com/wp-content/uploads/2021/06/SL-Skeeters-Logo-1200x500.jpg">
+                        </div>
+                        <div class="flex flex-col sm:flex-row mt-10">
+                            <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                                <div
+                                    class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col items-center text-center justify-center">
+                                    <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
+                                    <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                                    <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel
+                                        pin sartorial venmo tbh hot chicken gentrify portland.</p>
+                                </div>
+                            </div>
+                            <div
+                                class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                                <p class="leading-relaxed text-lg mb-4">Yamaha is a multinational corporation that
+                                    produces motorcycles, outboard motors, personal watercraft, boats, musical
+                                    instruments, and sports equipment.
+
+                                    The company was founded in 1887 as a musical instrument manufacturer and began
+                                    producing motorcycles in 1955. Yamaha is a major player in the global motorcycle
+                                    market and is also a leading manufacturer of outboard motors and personal
+                                    watercraft. The company's musical instruments are also popular around the world.</p>
+                                <a class="text-indigo-500 inline-flex items-center">Learn More
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2"
+                                        viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                    <div class="flex flex-wrap w-full">
+                        <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cash" viewBox="0 0 16 16">
+                                        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                        <path
+                                            d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">WAGE
+                                    </h2>
+                                    <p class="leading-relaxed">The Paying Aggrement</p>
+                                </div>
+                            </div>
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+                                        <path
+                                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z" />
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">FORM OF
+                                        WORK
+                                    </h2>
+                                    <p class="leading-relaxed">Full-Time Permanent</p>
+                                </div>
+                            </div>
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="5" r="3"></circle>
+                                        <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">SEX
+                                    </h2>
+                                    <p class="leading-relaxed">Coloring book nar whal glossier master cleanse umami.
+                                        Salvia +1 master cleanse blog taiyaki.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative pb-12">
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 4
+                                    </h2>
+                                    <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
+                                        Kinfolk bespoke try-hard cliche palo santo offal.</p>
+                                </div>
+                            </div>
+                            <div class="flex relative">
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                                        <path d="M22 4L12 14.01l-3-3"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow pl-4">
+                                    <h2 class="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">FINISH
+                                    </h2>
+                                    <p class="leading-relaxed">Pitchfork ugh tattooed scenester echo park gastropub
+                                        whatever cold-pressed retro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
+                            src="https://dummyimage.com/1200x500" alt="step">
+                    </div>
+                </div>
+            </section>
+
+
+
+        </section>
+    </div>
+</body>
+
+</html>
