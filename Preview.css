@@ -1,0 +1,24 @@
+#Head {
+    display: flex;
+    justify-content: center;
+}
+
+#F-Info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#S-Info {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+#End {
+    justify-content: flex-end;
+}
+
+.container {
+    max-width: 1024px !important;
+}

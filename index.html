@@ -97,6 +97,7 @@
 
                         <div class="relative z-10 inline-flex items-center space-x-3 md:ml-5 lg:justify-end">
                             <span class="inline-flex rounded-md shadow-sm">
+                                <h4 id="user">Name</h4>
                                 <a href="/Logout.html"
                                     class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border border-blue-700 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                                     data-rounded="rounded-md" data-primary="blue-600">
@@ -326,6 +327,13 @@
         </div>
     </footer>
     <script>
+        const userInfo = document.getElementById("user");
+        console.log(user.displayName)
+        user_info = JSON.parse(localStorage.getItem("user"))
+        if (userInfo) {
+            userInfo.innerHTML = user_info.displayName
+        }
+
         const myButton = document.getElementById("my-button");
         const myH1 = document.getElementById("my-h1");
 

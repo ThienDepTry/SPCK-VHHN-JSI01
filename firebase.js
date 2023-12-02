@@ -32,6 +32,7 @@ const login = () => {
             // The signed-in user info.
             const user = result.user;
             localStorage.setItem("user", JSON.stringify(user));
+            alert(user)
             alert("Login Successfull");
             window.location.href = "/index.html";
             // IdP data available using getAdditionalUserInfo(result)
