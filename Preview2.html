@@ -41,7 +41,7 @@
                             <a href="./index.html"
                                 class="relative font-medium leading-6 text-gray-600 transition duration-150 ease-out hover:text-gray-900"
                                 x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false">
-                                <span class="block">Home</span>
+                                <span class="block">Trang chủ</span>
                                 <span class="absolute bottom-0 left-0 inline-block w-full h-0.5 -mb-1 overflow-hidden">
                                     <span x-show="hover"
                                         class="absolute inset-0 inline-block w-full h-1 h-full transform bg-gray-900"
@@ -113,8 +113,8 @@
         </section>
     </div>
 
-    <section id="Main" class="container mx-auto">
-        <div id="Head">
+    <section id="Main" class="max-w-2xl mx-auto bg-white p-8 my-8 shadow-lg rounded">
+        <div id="Head" class="w-full flex gap-8 items-center">
             <div class="mr-8">
                 <b>Thông tin cá nhân</b>
                 <p>Họ và tên:</p>
@@ -123,15 +123,15 @@
                 <p>Email:</p>
                 <p>Địa chỉ:</p>
             </div>
-            <img class="img " src="/preview_img.jpg" alt="">
+            <img class="img mr-8 grow max-w-[50%]" class="img " src="/preview_img.jpg" alt="">
         </div>
 
         <div id="F-Info">
-            <strong style="font-size: 40px;">Thư xin việc</strong>
-            <strong style="font-size: 30px;">Vị trí: </strong>
+            <strong  class="text-3xl">Thư xin việc</strong>
+            <strong  class="text-xl">Vị trí: </strong>
         </div>
 
-        <div id="S-Info">
+        <div id="S-Info" class="mt-8">
             <strong style="font-size: 18px;">Kính gửi:</strong>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, officia doloremque, ducimus illo
                 dignissimos sit molestiae ab, voluptates unde ratione cupiditate. Exercitationem vero accusantium dolor
